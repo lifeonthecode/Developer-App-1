@@ -1,0 +1,35 @@
+.footer p{
+    position: relative;
+}
+.footer p::before {
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    content: "";
+    width: 0px;
+    height: 25px;
+    background-color: #D3E97A;
+    z-index: -1;
+    animation: blending 3s infinite;
+    -webkit-animation: blending 3s infinite;
+    border-radius: 5px;
+}
+
+@keyframes blending {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 200px;
+    }
+}
+@-webkit-keyframes blending {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 200px;
+    }
+}
+
+

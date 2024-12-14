@@ -1,0 +1,41 @@
+nav a.active {
+    color: #D3E97A;
+}
+
+.mobile_navigation {
+    display: none;
+}
+
+@media (max-width: 570px) {
+    .desktop_navigation {
+        display: none;
+    }
+    .mobile_navigation {
+        display: flex;
+    }
+}
+
+.mobileMenu_navbar {
+    position: fixed;
+    top: 0px;
+    right: -110%;
+    max-width: 350px;
+    width: 100%;
+    min-height: 100dvb;
+    background-color: #222220;
+    z-index: 20;
+    padding: 3.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    transition: all .7s ease;
+}
+.mobileMenu_navbar.show {
+    right: 0px;
+}
+
+.mobileMenu_navbar button.close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}

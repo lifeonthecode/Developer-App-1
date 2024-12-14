@@ -1,0 +1,39 @@
+.content_wrapper h3 span {
+    position: relative;
+}
+.content_wrapper h3 span::before {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #D3E97A;
+    animation:  test 7s  infinite;
+}
+@keyframes test {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+.btns_box button:nth-child(1) {
+    max-width: 187px;
+    width: 100%;
+    height: 54px;
+    background-color: #D3E97A;
+    border-radius: 30px;
+    padding: 1rem 1.25rem ;
+    text-align: start;
+    position: relative;
+}
+.btns_box button:nth-child(1)::before {
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    transform: translateY(-50%);
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #0a0a0a;
+    border-radius: 100%;
+}
